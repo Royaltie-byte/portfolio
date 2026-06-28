@@ -1,0 +1,71 @@
+/**
+ * Design tokens — "Royaltie" direction.
+ * Deep indigo-black void with a single antique-gold signature accent —
+ * a nod to "Royaltie" itself. Gold used sparingly: links, CTAs, the
+ * hero node-network, and the Founder Journey timeline thread.
+ */
+
+:root {
+  /* ---------- Color: surfaces ---------- */
+  --color-bg: #0b0a10;
+  --color-bg-elevated: #15131d;
+  --color-bg-elevated-2: #1c1926;
+
+  /* ---------- Color: text ---------- */
+  --color-text-primary: #f4efe6;
+  --color-text-secondary: #a39d93;
+  --color-text-tertiary: #6b6660;
+
+  /* ---------- Color: signature accent (gold) ---------- */
+  --color-accent: #c9a227;
+  --color-accent-soft: #e3c873;
+  --color-accent-muted: rgba(201, 162, 39, 0.14);
+
+  /* ---------- Color: rare secondary ---------- */
+  --color-wine: #5c1f33;
+
+  /* ---------- Color: structure ---------- */
+  --color-border: rgba(244, 239, 230, 0.08);
+  --color-border-strong: rgba(244, 239, 230, 0.16);
+  --color-focus-ring: #e3c873;
+
+  /* ---------- Typography ---------- */
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-manrope), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "SFMono-Regular", Menlo, monospace;
+
+  /* ---------- Type scale ---------- */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: 3.5rem;
+  --text-4xl: 4.75rem;
+
+  /* ---------- Spacing scale ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ---------- Layout ---------- */
+  --max-width: 1200px;
+  --content-padding: clamp(1.25rem, 5vw, 4rem);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.2s;
+  --duration-base: 0.4s;
+  --duration-slow: 0.8s;
+}

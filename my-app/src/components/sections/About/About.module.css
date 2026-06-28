@@ -1,0 +1,160 @@
+.section {
+  padding: var(--space-32) var(--content-padding);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .inner {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-24);
+    align-items: stretch;
+  }
+}
+
+/* ── Text column ── */
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.body p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.85;
+  color: var(--color-text-secondary);
+}
+
+.accentLink {
+  color: var(--color-accent-soft);
+  border-bottom: 1px solid var(--color-accent-muted);
+  transition: color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
+}
+
+.accentLink:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* ── Stats column ── */
+
+.statsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-8) var(--space-6);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: default;
+  transition: border-color var(--duration-base) var(--ease-out),
+    background var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+
+.statCard:hover {
+  border-color: var(--color-accent);
+  background: var(--color-bg-elevated-2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(201, 162, 39, 0.1),
+    0 0 0 1px rgba(201, 162, 39, 0.08);
+}
+
+.statCard:hover .statValue {
+  color: var(--color-accent-soft);
+}
+
+.statCard:hover .statLabel {
+  color: var(--color-text-secondary);
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-accent);
+  line-height: 1;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+/* ── Tagline ── */
+
+.tagline {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.taglineLine {
+  flex-shrink: 0;
+  width: 2px;
+  min-height: 48px;
+  background: linear-gradient(to bottom, var(--color-accent), transparent);
+  border-radius: 2px;
+}
+
+.taglineText {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+/* ── Closing statement ── */
+
+.closingStatement {
+  max-width: var(--max-width);
+  margin: var(--space-16) auto 0;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.01em;
+}
