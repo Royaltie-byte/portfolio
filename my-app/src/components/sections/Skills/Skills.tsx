@@ -296,7 +296,7 @@ export default function Skills() {
               width={18}
               height={18}
             />
-            Explore more projects, experiments, and learning journeys on GitHub
+            Explore more projects, experiments, and learning journeys on my GitHub
             <span className={styles.githubArrow} aria-hidden="true">
               →
             </span>

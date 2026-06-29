@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://allankihiu.dev";
+const SITE_URL = "https://portfolio.onrender.com";
 const SITE_NAME = "Allan Kihiu";
 const SITE_DESCRIPTION =
   "Full-stack developer and founder of Royaltie Technologies and ChatEase, building scalable AI-powered products and growing into cloud engineering and distributed systems.";
@@ -40,10 +40,13 @@ export const metadata: Metadata = {
     "Allan Kihiu",
     "Royaltie Technologies",
     "ChatEase",
+    "Matra",
     "full-stack developer",
     "founder",
     "cloud engineer",
     "Kenya software developer",
+    "Nairobi developer",
+    "AI products Kenya",
   ],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
@@ -107,8 +110,15 @@ const personJsonLd = {
       name: "ChatEase",
       url: "https://chatease.co.ke",
     },
+    {
+      "@type": "Organization",
+      name: "Matra",
+    },
   ],
-  sameAs: [] as string[],
+  sameAs: [
+    "https://github.com/Royaltie-byte",
+    "https://www.linkedin.com/in/kihiu-njogu-023059353/",
+  ],
 };
 
 export default function RootLayout({
