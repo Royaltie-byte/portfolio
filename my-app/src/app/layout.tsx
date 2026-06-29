@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://portfolio.onrender.com";
+const SITE_URL = "https://portfolio-tsst.onrender.com";
 const SITE_NAME = "Allan Kihiu";
 const SITE_DESCRIPTION =
   "Full-stack developer and founder of Royaltie Technologies and ChatEase, building scalable AI-powered products and growing into cloud engineering and distributed systems.";
