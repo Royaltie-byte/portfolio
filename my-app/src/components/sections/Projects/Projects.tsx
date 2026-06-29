@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 import { PROJECTS, type Project } from "@/data/projects";
 import styles from "./Projects.module.css";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
   visible: (delay: number) => ({
     opacity: 1,

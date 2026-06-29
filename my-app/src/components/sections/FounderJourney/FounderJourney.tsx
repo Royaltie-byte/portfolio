@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 import styles from "./FounderJourney.module.css";
 
 const MILESTONES = [
@@ -42,7 +43,7 @@ const MILESTONES = [
   },
 ];
 
-const slideIn = (side: string) => ({
+const slideIn = (side: string): Variants => ({
   hidden: {
     opacity: 0,
     x: side === "left" ? -40 : 40,
@@ -57,7 +58,7 @@ const slideIn = (side: string) => ({
   },
 });
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,

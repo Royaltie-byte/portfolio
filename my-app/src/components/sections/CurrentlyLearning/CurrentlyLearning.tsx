@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 import styles from "./CurrentlyLearning.module.css";
 
 type LearningItem = {
@@ -48,7 +49,7 @@ const LEARNING_ITEMS: LearningItem[] = [
   },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: (delay: number) => ({
     opacity: 1,

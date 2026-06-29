@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion"
 import styles from "./About.module.css";
 
 const STATS = [
@@ -10,14 +11,15 @@ const STATS = [
   { value: "4+", label: "Stacks in motion" },
 ];
 
-const fadeUp = {
+
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
   visible: (delay: number) => ({
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
+      ease: "easeOut",
       delay,
     },
   }),

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 import styles from "./Skills.module.css";
 
 type Skill = {
@@ -163,7 +164,7 @@ const GROWING_INTO: Skill[] = [
   },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: (delay: number) => ({
     opacity: 1,

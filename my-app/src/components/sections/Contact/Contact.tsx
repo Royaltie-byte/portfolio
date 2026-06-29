@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 import styles from "./Contact.module.css";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgyljzn";
@@ -34,7 +35,7 @@ const CONTACT_LINKS = [
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: (delay: number) => ({
     opacity: 1,
